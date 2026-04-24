@@ -1,19 +1,18 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart';
 import 'package:klasifikasi_penyakit_padi/modules/disesase/logic/services/api_service.dart';
 
 class ImageSection extends StatelessWidget {
   final bool isHistoryMode;
   final File? selectedImage;
-  final String? historyImageFilename;
-  final Future<String?>? historyImageUrlFuture;
+  final String? historyImageFilename; //
+  final Future<String?>? historyImageUrlFuture; //
   final DateTime? historyDate;
   final Color primaryColor;
   final Color accentColor;
   final VoidCallback onCameraTap;
-  final VoidCallback onGalleryTap;
+  final VoidCallback onGalleryTap; // Gallery button tap callback
   final VoidCallback? onImageTap;
 
   const ImageSection({

@@ -1,9 +1,9 @@
 // lib/modules/disesase/presentation/history_screen.dart
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:klasifikasi_penyakit_padi/modules/disesase/presentation/old/prediction_chat_screen.dart';
-import '../logic/services/api_service.dart';
-import '../logic/models/history_model.dart';
+import 'package:klasifikasi_penyakit_padi/modules/disesase/presentation/prediction_chat_screen.dart';
+import '../../logic/services/api_service.dart';
+import '../../logic/models/history_model.dart';
 
 class HistoryScreen extends StatefulWidget {
   @override

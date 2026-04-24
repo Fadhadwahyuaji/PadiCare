@@ -3,7 +3,7 @@ import 'package:image_picker/image_picker.dart';
 import 'logic/services/api_service.dart';
 import 'logic/controllers/prediction_controller.dart';
 import 'logic/controllers/chat_controller.dart';
-import 'presentation/old/prediction_chat_screen.dart';
+import 'presentation/prediction_chat_screen.dart';
 import 'presentation/history_screen.dart';
 
 class DiseaseModule extends Module {
@@ -37,7 +37,7 @@ class DiseaseModule extends Module {
     ChildRoute(
       predictionChatRoute,
       child: (_, args) => PredictionChatScreen(
-        historyItem: args.data?['historyItem'],
+        historyItemId: args.data?['historyItem'],
         isHistoryMode: args.data?['isHistoryMode'] ?? false,
       ),
     ),
